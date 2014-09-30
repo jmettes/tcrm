@@ -6,7 +6,6 @@ before_install:
   - sudo apt-get install build-essential
   - sudo apt-get install libhdf5-serial-dev
   - sudo apt-get install libnetcdf-dev
-  - sudo apt-get install curl libcurl3-dev
 # install Python dependencies
 install: "pip install -v -r requirements.txt"
 script: python tests/run.py
