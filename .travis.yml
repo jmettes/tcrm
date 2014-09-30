@@ -7,7 +7,7 @@ before_install:
   - sudo apt-get install libhdf5-serial-dev
   - sudo apt-get install libnetcdf-dev
   - sudo apt-get remove libcurl4-openssl-dev
-  - sudo dpkg -i libcurl3-gnutls_7.19.7-1ubuntu1.9_amd64.deb
+  - sudo apt-get install libcurl4-gnutls-dev
 # install Python dependencies
 install: "pip -v install -r requirements.txt"
 script: python tests/run.py
