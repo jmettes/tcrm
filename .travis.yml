@@ -11,6 +11,5 @@ before_install:
 # install Python dependencies
 install:
   - pip install pycurl
-  - pip install yum-metadata-parser
   - pip -v install -r requirements.txt
 script: python tests/run.py
