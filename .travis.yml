@@ -7,13 +7,9 @@ before_install:
   - sudo apt-get install build-essential
   - sudo apt-get install libhdf5-serial-dev
   - sudo apt-get install libnetcdf-dev
-  - sudo apt-get install libcurl4-openssl-dev
-  - sudo apt-get install python-pycurl
 # install Python dependencies
 install:
-  - pip install Babel==1.3
   - pip install pycurl
-  - echo `ls $VIRTUAL_ENV/lib/python$TRAVIS_PYTHON_VERSION/site-packages`
-  - echo `curl-config --version`
-  - "pip -v install -r requirements.txt"
+  - pip install yum-metadata-parser
+  - pip -v install -r requirements.txt
 script: python tests/run.py
