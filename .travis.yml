@@ -7,7 +7,6 @@ before_install:
   - sudo apt-get install build-essential
   - sudo apt-get install libhdf5-serial-dev
   - sudo apt-get install libnetcdf-dev
-  - sudo apt-get install yum-metadata-parser
 # install Python dependencies
 install:
   - pip install pycurl
